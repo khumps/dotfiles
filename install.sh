@@ -9,6 +9,10 @@ mkdir -p ~/.local/share/fonts
 unzip Hasklig.zip -d ~/.local/share/fonts/
 rm Hasklig.zip
 
+echo "[INSTALL] ZSH auto-suggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+
 echo "[INSTALL] Chezmoi"
 export BINDIR=$HOME/.local/bin
 sh -c "$(curl -fsLS chezmoi.io/get)"
