@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo "[INSTALL][FONTS] Hasklig"
+
+VERSION=v2.1.0
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/$VERSION/Hasklig.zip
+mkdir -p ~/.local/share/fonts
+unzip Hasklig.zip -d ~/.local/share/fonts/
+rm Hasklig.zip
