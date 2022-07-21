@@ -2,4 +2,5 @@
 
 echo "[INSTALL][ZSH] Auto suggestions"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+[[ ! -d ~/.zsh/zsh-autosuggestions ]] && git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+cd ~/.zsh/zsh-autosuggestions && git pull
